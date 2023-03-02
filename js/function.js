@@ -1,3 +1,12 @@
+// Mostrar código QR
+
+document.getElementById("expandir").addEventListener("click", function() {
+    document.getElementById("oculto").style.display = "block";
+});
+
+
+
+// Efecto de desplazamiento
 
 const links = document.getElementsByClassName("boton");
 
