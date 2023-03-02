@@ -157,7 +157,9 @@
     background-color: #91949e;
 }
 
-.c_negro {
+.c_negro,
+.c_negro_hov:hover,
+.c_negro_hov:focus {
     background-color: #223;
 }
 
@@ -256,7 +258,8 @@
     · -----------------------------------------------------------------
     */
 
-    .none_xs {
+    .none_xs,
+    .none_lg {
         display: none;
     }
 
@@ -380,6 +383,14 @@
 
     #menu li {
         margin: 12px 0;
+    }
+
+    #expandir {
+        cursor: pointer;
+    }
+
+    #oculto {
+        display: none;
     }
 
     #formacion,
@@ -702,6 +713,10 @@
     /*                                                            Cajas
     · -----------------------------------------------------------------
     */
+
+    .none_lg {
+        display: block;
+    }
 
     .medianil_right,
     .medianil_sm_right,
