@@ -1,0 +1,139 @@
+/*0======================== Atributos Generales */
+/*0-------------------------------- Tipografías */
+/* Barlow (Google Fonts) */
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@300;400;600&display=swap');
+
+/*0------------------------------------- Básico */
+/* */
+* {
+    /* Cajas */
+    box-sizing: border-box;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    /* Tipografía */
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 24px;
+    vertical-align: baseline;
+    text-decoration: none;
+    list-style: none;
+    list-style-position: inside;
+    color: #223;
+}
+
+/*0------------------------------------- Textos */
+/* Peso Tipográfico */
+.regular {
+    font-weight: 400;
+}
+
+.bold {
+    font-weight: 600;
+}
+
+/* Subrayado */
+.sb {
+    text-decoration: underline;
+}
+
+/* Cuerpo Tipográfico */
+.ct14 {
+    font-size: 14px;
+}
+
+.ct16 {
+    font-size: 16px;
+}
+
+.ct32 {
+    font-size: 32px;
+}
+
+/*0------------------------------------ Colores */
+.bordo {
+    color: #c40c3e;
+}
+
+.negro {
+    color: #223;
+}
+
+.gris {
+    color: #b2b3be;
+}
+
+.blanco {
+    color: white;
+}
+
+
+/*
+ *                                    Diseño, CV Proyecto Final, Ticmas
+ *                                 Eduardo G. Murawiec, febrero de 2023
+ */
+
+ /*                                                  Atributos generales
+ * ====================================================================
+ */
+
+/*                                                          Tipografías
+ * --------------------------------------------------------------------
+ */
+
+ /* Barlow Semi Condensed (Google Fonts) */
+ @import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@300;400;600&display=swap');
+
+/* ··········································· Fuentes tipográficas */
+/* Tipografía primaria */
+* {
+    font-family: "Barlow Semi Condensed", sans-serif;
+}
+
+/* ··································· Características tipográficas */
+ * {
+    vertical-align: baseline;
+    text-decoration: none;
+    text-transform: none;
+    list-style: none;
+    list-style-position: inside;
+ }
+
+ /* ········································· Variables tipográficas */
+ /* Estilo tipográfico primario */
+ *,
+ .normal {
+    font-style: normal;
+ }
+
+ .italic {
+    font-style: italic;
+ }
+
+ .underline {
+    text-decoration: underline;
+ }
+
+ .capital {
+    text-transform: uppercase;
+ }
+
+ /* ··············································· Peso tipográfico */
+ /* Peso tipográfico primario */
+ *,
+ .regular {
+    font-weight: 400;
+ }
+
+ .bold {
+    font-weight: 600;
+ }
+
+ /* ············································· Cuerpo tipográfico */
+ .ct14 {
+    font-size: 14px;
+ }
+
+ /* Cuerpo tipográfico primario */

@@ -1,0 +1,979 @@
+/*
+·                                     Diseño, CV Proyecto Final, Ticmas
+·                                  Eduardo G. Murawiec, febrero de 2023
+*/
+
+/*                                                  Atributos generales
+· =====================================================================
+*/
+
+/*                                                          Tipografías
+· ---------------------------------------------------------------------
+*/
+
+/* Barlow Semi Condensed (Google Fonts) */
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@400;500;700&display=swap');
+
+/* ············································ Fuentes tipográficas */
+/* Tipografía primaria */
+* {
+    font-family: "Barlow Semi Condensed", sans-serif;
+}
+
+/* ···································· Características tipográficas */
+* {
+    vertical-align: baseline;
+    text-decoration: none;
+    text-transform: none;
+    list-style: none;
+    list-style-position: outside;
+}
+
+/* ·········································· Variables tipográficas */
+/* Estilo tipográfico primario */
+*,
+.normal {
+    font-style: normal;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.capital {
+    text-transform: uppercase;
+}
+
+/* ················································ Peso tipográfico */
+/* Peso tipográfico primario */
+*,
+.regular {
+    font-weight: 400;
+}
+
+.medium {
+    font-weight: 500;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+/* ·············································· Cuerpo tipográfico */
+.ct14 {
+    font-size: 14px;
+}
+
+/* Cuerpo tipográfico primario */
+*,
+.ct16 {
+    font-size: 16px;
+}
+
+.ct32 {
+    font-size: 32px;
+}
+
+.ct64 {
+    font-size: 64px;
+}
+
+/* ·········································· Interlínea tipográfica */
+/* Interlínea primaria */
+*,
+.in24 {
+    line-height: 24px;
+}
+
+/* ·········································· Alineación tipográfica */
+/* Alineación primaria */
+*,
+.left {
+    text-align: left;
+}
+
+.center {
+    text-align: center;
+}
+
+.right {
+    text-align: right;
+}
+
+/* ····················································· Tabuladores */
+.tab24 {
+    margin-left: 24px;
+}
+
+/*                                                              Colores
+· ---------------------------------------------------------------------
+*/
+
+/* ············································ Colores tipográficos */
+.blanco,
+.blanco_hov:hover,
+.blanco_hov:focus {
+    color: #fff;
+}
+
+.crema {
+    color: #e2e2e6;
+}
+
+.gris,
+.gris_hov:hover,
+.gris_hov:focus {
+    color: #91949e;
+}
+
+/* Color primario */
+*,
+.negro,
+.negro_hov:hover,
+.negro_hov:focus {
+    color: #223;
+}
+
+.bordo,
+.bordo_hov:hover,
+.bordo_hov:focus {
+    color: #c40c3e;
+}
+
+/* ··················································· Colores cajas */
+.c_blanco {
+    background-color: #fff;
+}
+
+.c_crema {
+    background-color: #e2e2e6;
+}
+
+.c_gris {
+    background-color: #91949e;
+}
+
+.c_negro {
+    background-color: #223;
+}
+
+.c_bordo,
+.c_bordo_hov:hover,
+.c_bordo_hov:focus {
+    background-color: #c40c3e;
+}
+
+/*                                                                Cajas
+· ---------------------------------------------------------------------
+*/
+
+/* ········································· Características básicas */
+* {
+    box-sizing: border-box;
+    box-shadow: none;
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+.auto {
+    margin: auto;
+}
+
+.block {
+    display: block;
+}
+
+.inline_block {
+    display: inline-block;
+}
+
+.responsive {
+    width: 100%;
+    max-width: max-content;
+}
+
+.float_left {
+    float: left;
+}
+
+.float_right {
+    float: right;
+}
+
+/* ······················································· Columnas  */
+.fila,
+.flex,
+.columna {
+    display: flex;
+}
+.fila {
+    flex-wrap: wrap;
+}
+
+.columna {
+    flex-direction: column;
+    
+}
+
+.end {
+    align-self: flex-end;
+}
+
+/* ······················································· Imágenes  */
+/* Íconos de listas */
+#cumple {
+    list-style-image: url(../imagenes/iconos/listas/torta.png) !important;
+}
+
+#lugar {
+    list-style-image:url(../imagenes/iconos/listas/posicion.png) !important;
+}
+
+#correo {
+    list-style-image: url(../imagenes/iconos/listas/carta.png) !important;
+}
+
+#telefono {
+    list-style-image: url(../imagenes/iconos/listas/celular.png) !important;
+}
+
+#behance {
+    list-style-image: url(../imagenes/iconos/listas/behance.png) !important;
+}
+
+/*                                                Atributos pantalla XS
+· =====================================================================
+*/
+
+@media screen and (min-width: 0px) {
+    
+    /*                                                            Cajas
+    · -----------------------------------------------------------------
+    */
+
+    .none_xs {
+        display: none;
+    }
+
+    .medianil_right {
+        padding-right: 24px;
+    }
+
+    .medianil_left {
+        padding-left: 24px;
+    }
+
+    /* Pictogramas */
+    .picto_left {
+        max-width: 48px;
+        min-width: 48px;
+    }
+
+    .picto_center {
+        width: 120px;
+    }
+
+    /* ··················································· Columnas  */
+    .col_1,
+    .col_2,
+    .col_3,
+    .col_4,
+    .col_5,
+    .col_6,
+    .col_7,
+    .col_8,
+    .col_9,
+    .col_10,
+    .col_11,
+    .col_12 {
+        float: left;
+    }
+    
+    .col_1 {
+        width: 8.33%;
+    }
+
+    .col_2 {
+        width: 16.66%;
+    }
+
+    .col_3 {
+        width: 25%
+    }
+
+    .col_4 {
+        width: 33.33%;
+    }
+
+    .col_5 {
+        width: 41.66%;
+    }
+
+    .col_6 {
+        width: 50%;
+    }
+
+    .col_7 {
+        width: 58.33%;
+    }
+
+    .col_8 {
+        width: 66.66%;
+    }
+
+    .col_9 {
+        width: 75%;
+    }
+
+    .col_10 {
+        width: 83.33%;
+    }
+
+    .col_11 {
+        width: 91.66%;
+    }
+
+    .col_12 {
+        width: 100%;
+    }
+
+    .boton {
+        display: block;
+        padding: 5px 12px 7px;
+    }
+
+    /* ················································ Misceláneas  */
+    .horizontal {
+        border-bottom: solid #c1c4ce 1px;
+    }
+    .vertical {
+        border-right: solid #c1c4ce 1px;
+    }
+
+    .linea_24,
+    .linea_x {
+        padding-top: 24px;
+    }
+    
+    .salto_24,
+    .salto_x {
+        padding-bottom: 24px;
+    }
+    
+    .salto_48 {
+        padding-bottom: 48px;
+    }
+
+    /* ·························································· ID */
+    #contenido {
+        padding: 24px 4%;
+    }
+
+    #programas {
+        padding-right: 48px;
+    }
+
+    #menu li {
+        margin: 12px 0;
+    }
+
+    #formacion,
+    #experiencia,
+    #conocimientos,
+    #reconocimientos,
+    #otros,
+    #cierre {
+        border-top: solid #c1c4ce 1px;
+    }
+
+    #foto {
+        margin-bottom: 5px;
+    }
+
+    #foto img {
+        align-self: flex-end;
+        border-bottom: solid #c1c4ce 1px;
+    }
+
+    #cierre {
+        width: 240px;
+        margin: auto;
+    }
+}
+
+/*                                                Atributos pantalla SM
+· =====================================================================
+*/
+
+@media screen and (min-width: 576px) {
+    
+    /*                                                            Cajas
+    · -----------------------------------------------------------------
+    */
+
+    .none_xs {
+        display: block;
+    }
+
+    .none_sm {
+        display: none;
+    }
+
+    .medianil_right,
+    .medianil_sm_right {
+        padding-right: 24px;
+    }
+
+    .medianil_left,
+    .medianil_sm_left {
+        padding-left: 24px;
+    }
+
+    /* ··················································· Columnas  */
+    .col_sm_1,
+    .col_sm_2,
+    .col_sm_3,
+    .col_sm_4,
+    .col_sm_5,
+    .col_sm_6,
+    .col_sm_7,
+    .col_sm_8,
+    .col_sm_9,
+    .col_sm_10,
+    .col_sm_11,
+    .col_sm_12 {
+        float: left;
+    }
+    
+    .col_sm_1 {
+        width: 8.33%;
+    }
+
+    .col_sm_2 {
+        width: 16.66%;
+    }
+
+    .col_sm_3 {
+        width: 25%
+    }
+
+    .col_sm_4 {
+        width: 33.33%;
+    }
+
+    .col_sm_5 {
+        width: 41.66%;
+    }
+
+    .col_sm_6 {
+        width: 50%;
+    }
+
+    .col_sm_7 {
+        width: 58.33%;
+    }
+
+    .col_sm_8 {
+        width: 66.66%;
+    }
+
+    .col_sm_9 {
+        width: 75%;
+    }
+
+    .col_sm_10 {
+        width: 83.33%;
+    }
+
+    .col_sm_11 {
+        width: 91.66%;
+    }
+
+    .col_sm_12 {
+        width: 100%;
+    }
+
+    /* ················································ Misceláneas  */
+    .horizontal_sm {
+        border-bottom: solid #c1c4ce 1px;
+    }
+    .vertical_sm {
+        border-right: solid #c1c4ce 1px;
+    }
+
+    .linea_sm_24 {
+        padding-top: 24px;
+    }
+
+    .linea_x {
+        padding-top: 36px;
+    }
+    
+    .salto_sm_24 {
+        padding-bottom: 24px;
+    }
+
+    .salto_x {
+        padding-bottom: 36px;
+    }
+    
+    .salto_sm_48 {
+        padding-bottom: 48px;
+    }
+
+    .boton {
+        display: inline;
+        padding: 4px 12px 5px;
+    }
+
+    /* ·························································· ID */
+    #contenido {
+        padding: 24px 6%;
+    }
+
+    #detalles {
+        padding-right: 12px;
+    }
+
+    #detalles div img {
+        padding-left: 12px;
+    }
+
+    #programas {
+        padding-right: 24px;
+    }
+
+}
+
+/*                                                Atributos pantalla MD
+· =====================================================================
+*/
+
+@media screen and (min-width: 768px) {
+
+    /*                                                            Cajas
+    · -----------------------------------------------------------------
+    */
+
+    .none_sm {
+        display: block;
+    }
+
+    .medianil_right,
+    .medianil_sm_right,
+    .medianil_md_right {
+        padding-right: 24px;
+    }
+
+    .medianil_left,
+    .medianil_sm_left,
+    .medianil_md_left {
+        padding-left: 24px;
+    }
+
+    /* Pictogramas */
+    .picto_left {
+        max-width: 54px;
+        min-width: 54px;
+    }
+
+    .picto_center {
+        width: 126px;
+    }
+
+    /* ··················································· Columnas  */
+    .col_md_1,
+    .col_md_2,
+    .col_md_3,
+    .col_md_4,
+    .col_md_5,
+    .col_md_6,
+    .col_md_7,
+    .col_md_8,
+    .col_md_9,
+    .col_md_10,
+    .col_md_11,
+    .col_md_12 {
+        float: left;
+    }
+    
+    .col_md_1 {
+        width: 8.33%;
+    }
+
+    .col_md_2 {
+        width: 16.66%;
+    }
+
+    .col_md_3 {
+        width: 25%
+    }
+
+    .col_md_4 {
+        width: 33.33%;
+    }
+
+    .col_md_5 {
+        width: 41.66%;
+    }
+
+    .col_md_6 {
+        width: 50%;
+    }
+
+    .col_md_7 {
+        width: 58.33%;
+    }
+
+    .col_md_8 {
+        width: 66.66%;
+    }
+
+    .col_md_9 {
+        width: 75%;
+    }
+
+    .col_md_10 {
+        width: 83.33%;
+    }
+
+    .col_md_11 {
+        width: 91.66%;
+    }
+
+    .col_md_12 {
+        width: 100%;
+    }
+
+    /* ················································ Misceláneas  */
+    .horizontal_md {
+        border-bottom: solid #c1c4ce 1px;
+    }
+    .vertical_md {
+        border-right: solid #c1c4ce 1px;
+    }
+
+    .linea_md_24 {
+        padding-top: 24px;
+    }
+
+    .linea_x {
+        padding-top: 48px;
+    }
+    
+    .salto_md_24 {
+        padding-bottom: 24px;
+    }
+    
+    .salto_md_48,
+    .salto_x {
+        padding-bottom: 48px;
+    }
+
+    /* ·························································· ID */
+    #contenido {
+        padding: 24px 8%;
+    }
+
+    #detalles {
+        padding-right: 18px;
+    }
+
+    #detalles div img {
+        padding-left: 18px;
+    }
+
+    #programas {
+        padding-right: 36px;
+    }
+}
+
+/*                                                Atributos pantalla LG
+· =====================================================================
+*/
+
+@media screen and (min-width: 992px) {
+    
+    /*                                                            Cajas
+    · -----------------------------------------------------------------
+    */
+
+    .medianil_right,
+    .medianil_sm_right,
+    .medianil_md_right,
+    .medianil_lg_right {
+        padding-right: 24px;
+    }
+
+    .medianil_left,
+    .medianil_sm_left,
+    .medianil_md_left,
+    .medianil_lg_left {
+        padding-left: 24px;
+    }
+
+    /* Pictogramas */
+    .picto_left {
+        max-width: 48px;
+        min-width: 48px;
+    }
+
+    .picto_center {
+        width: 120px;
+    }
+
+    /* ··················································· Columnas  */
+    .col_lg_1,
+    .col_lg_2,
+    .col_lg_3,
+    .col_lg_4,
+    .col_lg_5,
+    .col_lg_6,
+    .col_lg_7,
+    .col_lg_8,
+    .col_lg_9,
+    .col_lg_10,
+    .col_lg_11,
+    .col_lg_12 {
+        float: left;
+    }
+    
+    .col_lg_1 {
+        width: 8.33%;
+    }
+
+    .col_lg_2 {
+        width: 16.66%;
+    }
+
+    .col_lg_3 {
+        width: 25%
+    }
+
+    .col_lg_4 {
+        width: 33.33%;
+    }
+
+    .col_lg_5 {
+        width: 41.66%;
+    }
+
+    .col_lg_6 {
+        width: 50%;
+    }
+
+    .col_lg_7 {
+        width: 58.33%;
+    }
+
+    .col_lg_8 {
+        width: 66.66%;
+    }
+
+    .col_lg_9 {
+        width: 75%;
+    }
+
+    .col_lg_10 {
+        width: 83.33%;
+    }
+
+    .col_lg_11 {
+        width: 91.66%;
+    }
+
+    .col_lg_12 {
+        width: 100%;
+    }
+
+    /* ················································ Misceláneas  */
+    .horizontal_lg {
+        border-bottom: solid #c1c4ce 1px;
+    }
+    .vertical_lg {
+        border-right: solid #c1c4ce 1px;
+    }
+
+    .linea_lg_24 {
+        padding-top: 24px;
+    }
+    
+    .salto_lg_24 {
+        padding-bottom: 24px;
+    }
+    
+    .salto_lg_48 {
+        padding-bottom: 48px;
+    }
+
+    /* ·························································· ID */
+    #contenido {
+        padding: 24px 4.2%;
+    }
+    
+    #detalles {
+        padding-right: 12px;
+    }
+
+    #detalles div img {
+        padding-left: 12px;
+    }
+
+    #programas {
+        padding-right: 24px;
+    }
+}
+
+/*                                                Atributos pantalla XL
+· =====================================================================
+*/
+
+@media screen and (min-width: 1200px) {
+
+    /*                                                            Cajas
+    · -----------------------------------------------------------------
+    */
+
+    .medianil_right,
+    .medianil_sm_right,
+    .medianil_md_right,
+    .medianil_lg_right,
+    .medianil_xl_right {
+        padding-right: 36px;
+    }
+
+    .medianil_left,
+    .medianil_sm_left,
+    .medianil_md_left,
+    .medianil_lg_left,
+    .medianil_xl_left {
+        padding-left: 36px;
+    }
+
+    /* Pictogramas */
+    .picto_lin {
+        max-width: 36px;
+        min-width: 36px;
+    }
+
+    .picto_left {
+        max-width: 60px;
+        min-width: 60px;
+    }
+
+    .picto_center {
+        width: 126px;
+    }
+
+    /* ··················································· Columnas  */
+    .col_xl_1,
+    .col_xl_2,
+    .col_xl_3,
+    .col_xl_4,
+    .col_xl_5,
+    .col_xl_6,
+    .col_xl_7,
+    .col_xl_8,
+    .col_xl_9,
+    .col_xl_10,
+    .col_xl_11,
+    .col_xl_12 {
+        float: left;
+    }
+    
+    .col_xl_1 {
+        width: 8.33%;
+    }
+
+    .col_xl_2 {
+        width: 16.66%;
+    }
+
+    .col_xl_3 {
+        width: 25%
+    }
+
+    .col_xl_4 {
+        width: 33.33%;
+    }
+
+    .col_xl_5 {
+        width: 41.66%;
+    }
+
+    .col_xl_6 {
+        width: 50%;
+    }
+
+    .col_xl_7 {
+        width: 58.33%;
+    }
+
+    .col_xl_8 {
+        width: 66.66%;
+    }
+
+    .col_xl_9 {
+        width: 75%;
+    }
+
+    .col_xl_10 {
+        width: 83.33%;
+    }
+
+    .col_xl_11 {
+        width: 91.66%;
+    }
+
+    .col_xl_12 {
+        width: 100%;
+    }
+
+    /* ················································ Misceláneas  */
+    .horizontal_xl {
+        border-bottom: solid #c1c4ce 1px;
+    }
+    .vertical_xl {
+        border-right: solid #c1c4ce 1px;
+    }
+
+    .linea_xl_24 {
+        padding-top: 24px;
+    }
+    
+    .salto_xl_24 {
+        padding-bottom: 24px;
+    }
+    
+    .salto_xl_48 {
+        padding-bottom: 48px;
+    }
+
+    .salto_x {
+        padding-bottom: 60px;
+    }
+
+    /* ·························································· ID */
+    #contenido {
+        padding: 24px 4%;
+        width: 92%;
+        max-width: 1260px;
+    }
+
+    #detalles {
+        padding-right: 18px;
+    }
+
+    #detalles div img {
+        padding-left: 18px;
+    }
+
+    #programas {
+        padding-right: 36px;
+    }
+}
