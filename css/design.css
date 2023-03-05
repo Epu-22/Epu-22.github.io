@@ -40,7 +40,9 @@
     font-style: italic;
 }
 
-.underline {
+.underline,
+.underline_hov:hover,
+.underline_hov:focus {
     text-decoration: underline;
 }
 
@@ -115,57 +117,55 @@
 
 /* ············································ Colores tipográficos */
 .blanco,
-.blanco_hov:hover,
-.blanco_hov:focus {
+.blanco_hov:hover {
     color: #fff;
 }
 
-.crema {
+.crema
+.crema_hov:hover {
     color: #e2e2e6;
 }
 
 .gris,
-.gris_hov:hover,
-.gris_hov:focus {
+.gris_hov:hover {
     color: #91949e;
 }
 
 /* Color primario */
 *,
 .negro,
-.negro_hov:hover,
-.negro_hov:focus {
+.negro_hov:hover {
     color: #223;
 }
 
 .bordo,
-.bordo_hov:hover,
-.bordo_hov:focus {
+.bordo_hov:hover {
     color: #c40c3e;
 }
 
 /* ··················································· Colores cajas */
-.c_blanco {
+.c_blanco,
+.c_blanco_hov:hover {
     background-color: #fff;
 }
 
-.c_crema {
+.c_crema,
+.c_crema_hov:hover {
     background-color: #e2e2e6;
 }
 
-.c_gris {
+.c_gris,
+.c_gris_hov:hover {
     background-color: #91949e;
 }
 
 .c_negro,
-.c_negro_hov:hover,
-.c_negro_hov:focus {
+.c_negro_hov:hover {
     background-color: #223;
 }
 
 .c_bordo,
-.c_bordo_hov:hover,
-.c_bordo_hov:focus {
+.c_bordo_hov:hover {
     background-color: #c40c3e;
 }
 
@@ -207,7 +207,7 @@
     float: right;
 }
 
-/* ······················································· Columnas  */
+/* ························································ Columnas */
 .fila,
 .flex,
 .columna {
@@ -226,7 +226,7 @@
     align-self: flex-end;
 }
 
-/* ······················································· Imágenes  */
+/* ························································ Imágenes */
 /* Íconos de listas */
 #cumple {
     list-style-image: url(../imagenes/iconos/listas/torta.png) !important;
@@ -281,7 +281,7 @@
         width: 120px;
     }
 
-    /* ··················································· Columnas  */
+    /* ···················································· Columnas */
     .col_1,
     .col_2,
     .col_3,
@@ -344,13 +344,14 @@
     .col_12 {
         width: 100%;
     }
-
-    .boton {
+    
+    /* ····················································· Enlaces */
+    .botones {
         display: block;
         padding: 5px 12px 7px;
     }
 
-    /* ················································ Misceláneas  */
+    /* ················································· Misceláneas */
     .horizontal {
         border-bottom: solid #c1c4ce 1px;
     }
@@ -445,7 +446,7 @@
         padding-left: 24px;
     }
 
-    /* ··················································· Columnas  */
+    /* ···················································· Columnas */
     .col_sm_1,
     .col_sm_2,
     .col_sm_3,
@@ -509,7 +510,7 @@
         width: 100%;
     }
 
-    /* ················································ Misceláneas  */
+    /* ················································· Misceláneas */
     .horizontal_sm {
         border-bottom: solid #c1c4ce 1px;
     }
@@ -536,8 +537,10 @@
     .salto_sm_48 {
         padding-bottom: 48px;
     }
-
-    .boton {
+    
+    /* ····················································· Enlaces */
+    .boton,
+    .botones {
         display: inline;
         padding: 4px 12px 5px;
     }
@@ -597,7 +600,7 @@
         width: 126px;
     }
 
-    /* ··················································· Columnas  */
+    /* ···················································· Columnas */
     .col_md_1,
     .col_md_2,
     .col_md_3,
@@ -661,7 +664,7 @@
         width: 100%;
     }
 
-    /* ················································ Misceláneas  */
+    /* ················································· Misceláneas */
     .horizontal_md {
         border-bottom: solid #c1c4ce 1px;
     }
@@ -742,7 +745,7 @@
         width: 120px;
     }
 
-    /* ··················································· Columnas  */
+    /* ···················································· Columnas */
     .col_lg_1,
     .col_lg_2,
     .col_lg_3,
@@ -806,7 +809,7 @@
         width: 100%;
     }
 
-    /* ················································ Misceláneas  */
+    /* ················································· Misceláneas */
     .horizontal_lg {
         border-bottom: solid #c1c4ce 1px;
     }
@@ -885,7 +888,7 @@
         width: 126px;
     }
 
-    /* ··················································· Columnas  */
+    /* ···················································· Columnas */
     .col_xl_1,
     .col_xl_2,
     .col_xl_3,
@@ -949,7 +952,7 @@
         width: 100%;
     }
 
-    /* ················································ Misceláneas  */
+    /* ················································· Misceláneas */
     .horizontal_xl {
         border-bottom: solid #c1c4ce 1px;
     }
@@ -991,4 +994,5 @@
     #programas {
         padding-right: 36px;
     }
+    
 }
