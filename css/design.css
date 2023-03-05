@@ -538,13 +538,6 @@
         padding-bottom: 48px;
     }
     
-    /* ····················································· Enlaces */
-    .boton,
-    .botones {
-        display: inline;
-        padding: 4px 12px 5px;
-    }
-
     /* ·························································· ID */
     #contenido {
         padding: 24px 6%;
@@ -687,6 +680,13 @@
     .salto_md_48,
     .salto_x {
         padding-bottom: 48px;
+    }
+    
+    /* ····················································· Enlaces */
+    .boton,
+    .botones {
+        display: inline;
+        padding: 4px 12px 5px;
     }
 
     /* ·························································· ID */
